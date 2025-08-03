@@ -139,6 +139,8 @@ Evaluation (classification_report)
 
 Logistic Regression model is trained on-the-fly using uploaded data.
 
+# How to Run
+
 To Access this Project : python nairy.py
 
 Classification Report : python report.py 
