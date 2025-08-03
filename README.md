@@ -1,6 +1,6 @@
 # Credit-Card-Fraud-Detection
 
-Purpose
+# Purpose :
 To build a web interface where users can input transaction features, and the system predicts if the transaction is fraudulent or legitimate using a trained ML model.
 
 🧠 Project Motivation
