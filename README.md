@@ -3,7 +3,7 @@
 # Purpose :
 To build a web interface where users can input transaction features, and the system predicts if the transaction is fraudulent or legitimate using a trained ML model.
 
-🧠 Project Motivation
+# 🧠 Project Motivation
 
 Credit card fraud poses a significant threat in the digital payment ecosystem. With the increase in online and card-not-present transactions, the frequency and sophistication of fraudulent activities have also risen. Detecting these rare fraudulent transactions quickly and accurately is essential to protect both users and financial institutions.
 
@@ -17,7 +17,7 @@ Allow real-time analysis of uploaded transaction datasets.
 
 The goal was to make fraud detection simple, interactive, and usable for small organizations or educational demonstrations.
 
-💻 Frontend Technologies Used
+# 💻 Frontend Technologies Used
 
 The frontend is designed using HTML, Bootstrap, and Flask templating. It includes:
 
@@ -29,7 +29,7 @@ A results page that displays statistics like total, fraudulent, and genuine tran
 
 All pages are built using render_template_string() and embedded HTML inside the Python script (nairy.py).
 
-🛠 Backend Technologies Used
+# 🛠 Backend Technologies Used
 The backend is powered by:
 
 Python (Flask Framework) for handling web routes and logic.
@@ -42,8 +42,8 @@ Data preprocessing (StandardScaler)
 
 Model training (LogisticRegression)
 
-🔧 Key Components
-1. Imports
+# 🔧 Key Components
+# 1. Imports
 
 from flask import Flask, request, render_template_string
 import pandas as pd
@@ -58,7 +58,7 @@ Pandas: For data handling.
 
 Sklearn modules: For model training, scaling, and evaluation.
 
-2. Flask App Setup
+# 2. Flask App Setup
 
 app = Flask(_name_)
 model = None
@@ -66,7 +66,7 @@ scaler = None
 
 Initializes Flask app and global variables for ML model and scaler.
 
-3. Web UI (HTML Template)
+# 3. Web UI (HTML Template)
    
 HTML content is stored in Python as a string (HOME_TEMPLATE) with:
 
@@ -76,7 +76,7 @@ Background image
 
 Likely a form to input transaction values
 
-🔍 Overview
+# 🔍 Overview
 
 This app lets users:
 
@@ -88,7 +88,7 @@ Train a Logistic Regression model on uploaded data.
 
 View predictions of fraudulent vs genuine transactions
 
-🌐 Web Routes & Functionality
+# 🌐 Web Routes & Functionality
 
 @app.route("/") → Home Page
 Renders a beautiful landing page using HOME_TEMPLATE.
@@ -125,7 +125,7 @@ Fraud % in the test set
 
 Displays results using RESULTS_TEMPLATE.
 
-⚙ Challenges Faced
+# ⚙ Challenges Faced
 
 Class Imbalance: Fraudulent transactions are rare (~0.1%), which made training effective models difficult without oversampling or advanced techniques.
 
@@ -133,12 +133,11 @@ Model Efficiency: The system retrains the model on every CSV upload, which is no
 
 User Interface Integration: Building a visually clean and responsive Flask-based web app while ensuring backend predictions worked correctly was a key hurdle.
 
-Error Handling: Ensuring the system gracefully handled invalid inputs, missing columns, or bad file formats was crucial to usability.
-
-To Access this Project : python nairy.py
-Classification Report : python report.py 
-
+Error Handling: Ensuring the system gracefully handled invalid inputs, missing columns, or bad file formats was crucial to usability
 
 Evaluation (classification_report)
 
 Logistic Regression model is trained on-the-fly using uploaded data.
+
+To Access this Project : python nairy.py
+Classification Report : python report.py 
