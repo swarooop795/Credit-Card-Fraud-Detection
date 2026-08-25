@@ -25,6 +25,7 @@ HOME_TEMPLATE = """
             background-size: cover;
             background-repeat: no-repeat;
             color: #333;
+            height: 100%
         }
         .card {
             border-radius: 10px;
