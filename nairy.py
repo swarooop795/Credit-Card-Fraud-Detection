@@ -240,4 +240,4 @@ def predict_fraud_route():
         return render_template_string(UPLOAD_TEMPLATE, results=f"Error: {str(e)}")
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
