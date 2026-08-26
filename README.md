@@ -141,6 +141,6 @@ Logistic Regression model is trained on-the-fly using uploaded data.
 
 # Procedure to Run 
 
-To Access this Project : python nairy.py
+To Access this Project : py nairy.py
 
-Classification Report : python report.py 
+Classification Report : py report.py 
