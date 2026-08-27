@@ -6,7 +6,7 @@ from sklearn.metrics import classification_report
 from imblearn.over_sampling import SMOTE  # pip install imbalanced-learn
 
 # Load dataset
-data = pd.read_csv('creditcard_2023.csv')
+data = pd.read_csv('Credit_Card_Applications.csv')
 
 # Check if Class column exists
 if 'Class' not in data.columns:
